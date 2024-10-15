@@ -15,7 +15,4 @@ COPY pnpm-lock.yaml .
 # Install dependencies using pnpm
 RUN pnpm install
 
-# Copy the rest of the app's code
-COPY . .
-
 CMD [ "pnpm", "run","start" ]
